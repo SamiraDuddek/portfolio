@@ -7,6 +7,7 @@ html {
 	font-size: 15px; 
   background-color: #ffffff; 
   hyphens:auto;
+
 }
 
 
@@ -31,6 +32,8 @@ html {
 
 .grid-center {
 	justify-content: space-around;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .grid-wide { 
@@ -40,7 +43,7 @@ html {
 
 
 .spalte{ 
-	background-color: #efebf9;
+	/*background-color: #efebf9;*/
 	flex-grow: 1;
   	flex-shrink: 1;
   	flex-basis: 5.5833333%;
@@ -142,12 +145,17 @@ html {
 
 
 
+
 p  {  
-	margin-bottom: 1.5rem;
-  margin-top: 0rem;
-	font-size: 1.3rem;
+  font-size: 1.3rem;
+  margin-top: 0px;
+}
 
-
+p.weiss  {  
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 img { 
@@ -173,27 +181,49 @@ h3{
   font-weight: 700;
   font-size: 2.3rem;
   margin-bottom: 10px;
+  margin-top: 0px;
 
 }
 
-h2 { 
-	color:black;
+h3.weiss{
+  color:#ffffff;
+  font-weight: 700;
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+h3.bold{
+  color:#336633;
   font-weight: 900;
   font-size: 2.3rem;
-  margin-top: 130px;
+  margin-bottom: 0px;
+}
+
+h2 { 
+  color:#336633;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 0px;
 
 }
 
 
 h5 { 
- color: white;
- background-color: blue;
+  font-size: 1.3rem;
+  margin-top: 0px;
+  font-weight: 600;
 
 }
 
+h6{
+  color:#ffffff;
+  font-weight: 300;
+  font-size: 0.5rem;
+}
+
 h4{
-  color: #ffffff;
-   text-decoration: none;
+    font-size: 1.6rem;
+    margin-top: 0px;
 }
 
 @media only screen and (max-width: 450px) { /* oder rem/em */
@@ -218,15 +248,14 @@ nav{
   background-color: #336633;
 }
 
-.logo{
-  color:#ffffff;
+
+
+.logo a{
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 18px;
-
-
-
+  font-size: 20px;
 }
 
 .nav-links{
@@ -245,7 +274,15 @@ nav{
   letter-spacing: 2px;
   font-size: 15px;
 
+
 }
+
+a:hover{ 
+  font-weight: 600;
+}
+
+
+
 
 .burger{
   display: none;
@@ -346,11 +383,8 @@ nav{
 .bildgroesse{
 
 /*border: 4px solid #000000;*/
-height:17rem;
-width: 15rem;
-display: flex; 
-    align-items: center;
-    margin-left: 4rem;
+
+
   }
 
 
@@ -360,13 +394,59 @@ display: flex;
   text-align: center;
 }
 
+
+
 .background{
+
   background-color: #336633;
-  width: 100%;
-  margin-top: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 
 }
 
+.background2{
+
+  background:linear-gradient(90deg, #fdfbfb 0%,#ebedee 100% );
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  
+
+}
+
+.background3{
+
+   background:linear-gradient(90deg, #ebedee 0%,#fdfbfb 100% );
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  
+
+}
+
+
+
+.footer-background{
+  background-color: #336633;
+
+}
+
+.footer{
+  justify-content: space-around;
+
+}
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 
 
 
