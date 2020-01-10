@@ -130,7 +130,7 @@ html {
 }
 
 @media only screen and (max-width: 450px) { /* oder rem/em */
- .spalte6 {
+ .spalte8 {
    flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 1000%;
@@ -226,18 +226,36 @@ h4{
     margin-top: 0px;
 }
 
-@media only screen and (max-width: 450px) { /* oder rem/em */
- 
+@media screen and (max-width: 450px) {/* oder rem/em */
  h1{
   font-size: 1.4rem;
  }
  html{
-  font-size: 12px;
+  font-size: 14px;
  }
  h3{
   font-size: 2rem;
  }
+
+
 }
+
+@media screen and (max-width: 450px) {
+.spalte4{
+  flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 65.6666%;
+    max-width: 65.666%;
+  }
+  
+  img{
+  flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 1000%;
+    max-width: 100%;
+ }
+
+} 
 
 /*Navigation*/
 nav{
@@ -297,7 +315,7 @@ a:hover{
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 800px){
   body{
     overflow-x: hidden;
   }
@@ -322,7 +340,17 @@ a:hover{
  .burger{
   display: block;
  }
+
+ .spalte8{
+  flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 82.834%;
+    max-width: 82.834%;
+    /*background-color: green;*/
+ }
 }
+
+
 
 .nav-active{
   transform: translateX(0%);
