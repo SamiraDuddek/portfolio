@@ -15,7 +15,7 @@ html {
 
 }
 
-@media screen and (max-width: 800px) {
+/*@media screen and (max-width: 800px) {
   html {
     background-color: blue;
   }
@@ -25,7 +25,7 @@ html {
   html {
     background-color: red;
   }
-}
+}*/
 
 
 
@@ -34,6 +34,7 @@ html {
    font-size: 1 .5rem;
  }
 }
+
 
 
 .grid{ 
@@ -115,6 +116,7 @@ html {
   	flex-shrink: 1;
   	flex-basis: 65.6666%;
   	max-width: 65.666%;
+    /*background-color: red;*/
   	
 }
 
@@ -142,14 +144,32 @@ html {
 
 
 @media only screen and (max-width: 800px) { /* oder rem/em */
+ .spalte2{
+  flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    max-width: 0%;
+ }
+
+ .spalte4{
+  flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 82.834%;
+    max-width: 82.834%;
+    padding-right: 3rem;
+    padding-left: 1rem;
+
+  }
+
  .spalte8 {
    flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 82.834%;
     max-width: 82.834%;
-   
  }
-}
+
+ 
+  }
  
 
 
@@ -199,7 +219,7 @@ h3.weiss{
   margin-bottom: 10px;
 }
 
-h3.bold{
+.bold{
   color:#336633;
   font-weight: 900;
   font-size: 2.3rem;
@@ -244,17 +264,38 @@ h4{
  h1{
   font-size: 2.2rem;
  }
- html{
-  font-size: 14px;
- }
+ 
  h3{
   font-size: 2rem;
  }
+ h3.weiss{
+  font-size: 2rem;
+ }
+
+ .bold{
+  font-size: 2rem;
+  font-weight: 700;
+ }
+
  .spalte8 {
    flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 1000%;
     max-width: 100%;
+ }
+
+
+ h6{
+  font-size: 0.7rem;
+ }
+
+ p.weiss{
+  font-size: 1.3rem;
+ }
+
+.grid-center{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
  }
 
 
@@ -264,8 +305,10 @@ h4{
 .spalte4{
   flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 65.6666%;
-    max-width: 65.666%;
+    flex-basis: 100%;
+    max-width: 100%;
+    padding-right: 0rem;
+    padding-left: 0rem;
   }
 
   img{
@@ -423,9 +466,23 @@ a:hover{
 }
 
 .bildgroesse{
+  vertical-align: top;
+  max-width: 90%;
 
-/*border: 4px solid #000000;*/
 
+  }
+
+  @media screen and (max-width: 800px){
+.bildgroesse{
+    max-width: 60%;
+  }
+
+  }
+
+  @media screen and (max-width: 450px){
+.bildgroesse{
+    max-width: 50%;
+  }
 
   }
 
