@@ -1,4 +1,9 @@
 
+
+
+
+
+
 html {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
@@ -10,10 +15,21 @@ html {
 
 }
 
+@media screen and (max-width: 800px) {
+  html {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    background-color: red;
+  }
+}
 
 
 
-@media only screen and (min-width: 768px) { /* oder rem/em */
+@media only screen and (min-width: 800px) { /* oder rem/em */
  html {
    font-size: 1 .5rem;
  }
@@ -111,7 +127,21 @@ html {
 
 }
 
-@media only screen and (max-width: 768px) { /* oder rem/em */
+.spalte12 { 
+	flex-grow: 1;
+  	flex-shrink: 1;
+  	flex-basis: 1000%;
+  	max-width: 100%;
+
+}
+
+
+.prefix3 {
+	margin-left: 22.7499%;
+}
+
+
+@media only screen and (max-width: 800px) { /* oder rem/em */
  .spalte8 {
    flex-grow: 1;
     flex-shrink: 1;
@@ -121,29 +151,6 @@ html {
  }
 }
  
-.spalte12 { 
-	flex-grow: 1;
-  	flex-shrink: 1;
-  	flex-basis: 1000%;
-  	max-width: 100%;
-
-}
-
-@media only screen and (max-width: 450px) { /* oder rem/em */
- .spalte8 {
-   flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 1000%;
-    max-width: 100%;
- }
-}
-
-.prefix3 {
-	margin-left: 22.7499%;
-}
-
-
-
 
 
 p  {  
@@ -226,15 +233,28 @@ h4{
     margin-top: 0px;
 }
 
+@media only screen and (max-width: 800px) { /* oder rem/em */
+ h1{
+  font-size: 3rem;
+ }
+}
+ 
+
 @media screen and (max-width: 450px) {/* oder rem/em */
  h1{
-  font-size: 1.4rem;
+  font-size: 2.2rem;
  }
  html{
   font-size: 14px;
  }
  h3{
   font-size: 2rem;
+ }
+ .spalte8 {
+   flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 1000%;
+    max-width: 100%;
  }
 
 
@@ -247,7 +267,7 @@ h4{
     flex-basis: 65.6666%;
     max-width: 65.666%;
   }
-  
+
   img{
   flex-grow: 1;
     flex-shrink: 1;
@@ -341,13 +361,7 @@ a:hover{
   display: block;
  }
 
- .spalte8{
-  flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 82.834%;
-    max-width: 82.834%;
-    /*background-color: green;*/
- }
+ 
 }
 
 
