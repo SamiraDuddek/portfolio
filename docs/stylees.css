@@ -450,6 +450,16 @@ a:hover{
 
 }
 
+@media screen and (max-width: 450px) {
+  .headerbild {
+  height: 100vw;
+  background-size: 200%;
+
+}
+
+  }
+
+
 .title-wrapper{
   flex-grow: 1;
   display: flex;
