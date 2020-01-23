@@ -148,7 +148,7 @@ html {
   flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0%;
-    max-width: 0%;
+    display: none;
  }
 
  .spalte4{
@@ -542,6 +542,12 @@ a:hover{
  }
 }
  
+ @media only screen and (max-width: 450px) { /* oder rem/em */
+ .bildgroesse-story{
+  max-width: 100%;
+  padding-bottom: 5.5833333%;
+ }
+}
 
 
 
@@ -550,29 +556,9 @@ a:hover{
   background-color: #336633;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-
-}
-
-.background2{
-
-  background:linear-gradient(90deg, #fdfbfb 0%,#ebedee 100% );
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
   
 
 }
-
-.background3{
-
-   background:linear-gradient(90deg, #ebedee 0%,#fdfbfb 100% );
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  
-
-}
-
 
 
 .footer-background{
@@ -587,7 +573,7 @@ a:hover{
 
 
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #336633; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -597,14 +583,18 @@ a:hover{
   font-size: 16px;
 }
 
-
 .character-row:nth-child(even){
   background:linear-gradient(90deg, #ebedee 0%,#fdfbfb 100% );
+   padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.character-row:nth-child(even){
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
 }
 
-.character-row:nth-child(odd).grid {
+.character-row:nth-child(even) .grid {
   flex-direction: row-reverse;
 }
 
